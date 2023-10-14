@@ -10,7 +10,7 @@
     <form>
         <p>
           <label for="comment">Add a comment here:</label>
-          <input type="text" id="comment" name="comment" value="I'm a text field">
+          <input type="text" id="comment" name="comment" value="I'm a disabled text field" disabled>
         </p>
         <p>
           <label for="email">Enter your email address:</label>
@@ -22,7 +22,7 @@
         </p>
         <p>
           <label for="search">Search:</label>
-          <input type="search" id="search" name="search">
+          <input type="search" id="search" name="search" placeholder="Type your search keyword">
         </p>
         <p>
           <label for="tel">Enter your number:</label>
@@ -30,7 +30,11 @@
         </p>
         <p>
           <label for="url">Web address:</label>
-          <input type="url" id="url" name="url">
+          <input type="url" id="url" name="url" value="https://example.com" readonly>
+        </p>
+        <p>
+          <!-- no label associated -->
+          <input type="hidden" id="timestamp" name="timestamp" value="1286705410">
         </p>
         <p>
           <button type="submit">Submit me!</button>
